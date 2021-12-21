@@ -1,0 +1,47 @@
+﻿.top {
+    height: 190px;
+    max-width: 1190px;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 190px;
+    width: 190px;
+    position: absolute
+}
+
+.message {
+    height: auto;
+    width: auto;
+    background-color: darkgray;
+    font-size: 25px;
+    text-align: center;
+}
+
+    .message p {
+        overflow: hidden;
+    }
+
+.copyright {
+    padding-top: 20px;
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+    height: 35px;
+}
+
+    .copyright div {
+        margin-top: 20px;
+    }
+
+        .copyright div p {
+            line-height: 22px;
+        }
+
+
+.main {
+    height:auto;
+    max-width: 1190px;
+    background-color: cornsilk;
+    margin: 0 auto;
+}

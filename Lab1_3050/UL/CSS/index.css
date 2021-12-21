@@ -1,0 +1,102 @@
+﻿.grid {
+    height:580px;
+    margin-top:20px;
+    margin:0 auto;
+}
+
+.grid-col1 {
+    width: 190px;
+    height: 464px;
+    background-color: #6e6568;
+    color: #fff;
+    font-size: 14px; /* 不是给字的，给 /  */
+    position: relative;
+ }
+
+.grid-col1 a {
+    color: #fff;
+    font-size: 14px; /* 是给链接文字  */
+    margin: 0 3px;
+}
+
+    .grid-col1 a:hover {
+        color: #f10215;
+    }
+
+.grid-col1 ul {
+    padding: 10px 0;
+}
+
+    .grid-col1 ul li {
+        padding-left: 12px;
+        height: 37px;
+        line-height: 26px;
+        /* margin-left: 12px; 同学们体会下 这里为什么不用 margin  就是因为下面有鼠标经过的效果*/
+    }
+
+        .grid-col1 ul li:hover {
+            background-color: #9c9698;
+        }
+
+.grid-col2 {
+    width: 790px;
+    height: 100%;
+    margin-left: 10px;
+}
+/* banner部分 */
+
+.arrow-l,
+.arrow-r {
+    position: absolute;
+    top: 43%;
+    width: 30px;
+    height: 60px;
+    transform: translateY(-50%);
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, .6);
+    font-family: arial;
+    font-weight: normal;
+}
+
+.arrow-r {
+    right: 430px;
+}
+
+
+.grid-col3 {
+    width: 190px;
+    height: 100%;
+}
+/* 右边模块 */
+
+.news {
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    padding: 7px 13px 0;
+    box-sizing: border-box;
+}
+
+.news-t {
+    height: 19px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+
+    .news-t p {
+        text-align:center;
+    }
+
+.news-b {
+    padding-top: 15px;
+}
+
+    .news-b p {
+        height: 422px;
+       
+    }
+
+       

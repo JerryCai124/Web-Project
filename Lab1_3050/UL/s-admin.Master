@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="s-admin.Master.cs" Inherits="Lab1_3050.UL.admin" %>
+
+<!DOCTYPE html>
+
+<html>
+
+<head runat="server">
+    <title>Hi,Honey Admin system</title>
+    <link href="CSS/adminbase.css" rel="stylesheet" />
+    <style>
+        .main {
+            height:auto;
+
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+
+
+<body>
+    <form id="form1" runat="server">
+         <div class="top">
+            <div class="logo">
+                <img src="IMG/logo.jpg"  height="190" width="190";/>
+            </div>
+            <div class="message">
+                <p> Welcome to Hi, Honey Admin Management System</p>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="mainPart" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="footer">
+            <div class="copyright">
+                <p> © 2020 Hi, Honey. All Rights Reserved.</p>
+
+            </div>
+            
+        </div>
+    </form>
+</body>
+</html>

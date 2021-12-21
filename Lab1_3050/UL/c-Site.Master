@@ -1,0 +1,172 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="c-Site.Master.cs" Inherits="Lab1_3050.UL.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta name="description" content="Delicious nature, high quality honey"/>
+    <!--头部和底部 结构基本相同 我们做基本的公共样式-->
+    <link rel="stylesheet" href="css/base.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+           
+
+         <!--快速导航栏部分 start-->
+    <div class="topbar">
+        <div class="w"> 
+            
+            <!-- 关键词 -->
+        <div class=" fl hotwords" ><a class="red">10% off for online order</a>
+        </div>
+            <ul class=" fr">                
+                <li><a href="c-login.aspx"class="red"><asp:Label ID="Label1" runat="server" Text="Hi,Sign In！"></asp:Label></a>
+                <li class="space"></li>
+                <li> <a href="c-history.aspx">My Order</a></li>
+                <li class="space"></li>
+                <li><a href="c-cart.aspx">Cart</a></li>
+                <li class="space"></li>
+                <li><a href="c-search.aspx">Search</a></li>
+                <li class="space"></li>
+                <li><a href="c-Logout.aspx">Sign Out</a></li>
+                <li class="space"></li>
+            
+            </ul>
+            
+            </div>
+            
+        </div>
+            
+    
+    <!--快速导航栏部分 end-->
+
+
+    <div class="w middle">
+        <div class="logo">
+            <h1>
+                <!--调高权重，便利与搜索引擎的优化-->
+                <a href="#">&nbsp;<img src="IMG/logo.jpg" width="190" /></a></h1>
+                </div>
+
+
+        <!-- 小导航部分 -->
+        <div class="navitems">
+            <ul>
+                <li><a href="c-index.aspx">Home</a></li>
+                <li class="space"></li>
+                
+                <li><a href="#">Products</a>
+                    <ul>
+                        <li><a href="c-item.aspx">Honey</a></li>
+                        <li><a href="#">Tools</a></li>
+                        <li><a href="#">Box</a></li>
+                        <li><a href="#">Clothing</a></li>
+                    </ul>
+                </li>
+                <li class="space"></li>
+
+                <li><a href="#">Help</a>
+                    <ul>
+                        <li><a href="c-Contact.aspx">Contact us</a></li>
+                        <li><a href="c-Contact.aspx">Emails Us</a></li>
+                        <li><a href="c-Contact.aspx">Find Us</a></li>
+                    </ul>
+
+                </li>
+                <li class="space"></li>
+
+                <li><a href="c-about.aspx">About Us</a></li>
+                
+                
+              
+            </ul>
+        </div>
+        
+    </div>
+    <!--中间头部分 end-->
+            
+            <asp:ContentPlaceHolder ID="Navibar" runat="server">
+            </asp:ContentPlaceHolder>
+
+
+
+   
+    <asp:ContentPlaceHolder ID="middle" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    <!-- 页面底部分 start  -->
+    <footer>
+        <!-- 服务模块 -->
+        <div class="service">
+            <div class="w">
+                <ul>
+                    <li>
+                        <p>Full Range </p>
+                     
+                    </li>
+                    <li>
+                        <p>Fast Dispatch</p>
+                    </li>
+                    <li>
+                        <p>High Quality</p>
+                    </li>
+                    <li>
+                        <p>Low Price</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 帮助模块 -->
+        <div class="w help">
+            <div class="fl">
+                <dl>
+                    <dt>Guide</dt>
+                    <dd><a href="#">Shoping step</a></dd>
+                    <dd><a href="#">FAQ</a></dd>
+
+                </dl>
+                <dl>
+                    <dt>Payment Method</dt>
+                    <dd><a href="#">Paypal</a></dd>
+                    <dd><a href="#">Card</a></dd>                
+                </dl>
+                <dl>
+                    <dt>Service</dt>
+                    <dd><a href="#">After sale policy</a></dd>
+                    <dd><a href="#">Return policy</a></dd>
+
+                </dl>
+                <dl>
+                    <dt>Special</dt>
+                    <dd><a href="#">Visit bee campus</a></dd>
+                    <dd><a href="#">Trainnig</a></dd>
+                </dl>
+           
+                <dl>
+                    <dt>Shipping Method</dt>
+                    <dd><a href="#">Delivery</a></dd>
+                    <dd><a href="#">Pick Up</a></dd>
+
+                </dl>
+            </div>
+        </div>
+
+        <div class="w copyright">
+            <p>
+                © 2020 Hi, Honey. All Rights Reserved.
+
+            </p>
+           
+
+        </div>
+    </footer>
+            <asp:ContentPlaceHolder ID="footer" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
